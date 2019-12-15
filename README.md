@@ -9,18 +9,18 @@ Inhoud:
 
 PWS singulariteiten calc testscript:
   
-  Het testscript gebruikt om de methode te testen waarmee het aantal singulariteiten wordt berekend
+-Het testscript gebruikt om de methode te testen waarmee het aantal singulariteiten wordt berekend
   
-  Bibliotheken: sympy en datetime
+-Bibliotheken: sympy en datetime
   
 PWS singulariteiten calc:
   
-   Het script met de functies rounddown(eq) en getSingularity(f) om te kunnen gebruiken in andere scripts
+-Het script met de functies rounddown(eq) en getSingularity(f) om te kunnen gebruiken in andere scripts
  
-   Bibliotheken: sympy
+-Bibliotheken: sympy
   
 PWS Figuren plotten:
   
-  Het script om vergelijkingen in de vorm F(x,y,z) = 0 te plotten in 3D
+-Het script om vergelijkingen in de vorm F(x,y,z) = 0 te plotten in 3D
   
-  Bibliotheken: sympy, numpy, matplotlib
+-Bibliotheken: sympy, numpy, matplotlib
