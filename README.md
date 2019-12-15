@@ -10,8 +10,10 @@ PWS singulariteiten calc testscript:
   Bibliotheken: sympy en datetime
   
 PWS singulariteiten calc:
-  Het script met de functies rounddown(eq) en getSingularity(f) om te kunnen gebruiken in andere scripts
-  Bibliotheken: sympy
+  
+      Het script met de functies rounddown(eq) en getSingularity(f) om te kunnen gebruiken in andere scripts
+ 
+      Bibliotheken: sympy
   
 PWS Figuren plotten:
   Het script om vergelijkingen in de vorm F(x,y,z) = 0 te plotten in 3D
