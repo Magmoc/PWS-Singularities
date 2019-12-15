@@ -23,21 +23,10 @@ def getSingularity(f):
    init_time = datetime.datetime.now()             #Begintijd
    x, y, z = sym.symbols('x y z', real=True)       #x, y en z zijn nu variabelen
    
-#   Als de vergelijking een string is, wordt deze omgezet naar een vergelijking 
-#   en worden de partieel afgeleiden bepaald
-   if isinstance(f,str):
-      ns = {"x" : sym.Symbol('x',real=True),
-            "y" : sym.Symbol('y',real=True),
-            "z" : sym.Symbol('z',real=True)}
-      f = sym.sympify(f, locals = ns)
-      px = sym.diff(f,x)
-      py = sym.diff(f,y)
-      pz = sym.diff(f,z)
-   else:
-#      Berekent de partieel afgeleiden van de functie
-      px = sym.Eq(sym.diff(f,x))
-      py = sym.Eq(sym.diff(f,y))
-      pz = sym.Eq(sym.diff(f,z))
+#   Berekent de partieel afgeleiden van de functie
+   px = sym.Eq(sym.diff(f,x))
+   py = sym.Eq(sym.diff(f,y))
+   pz = sym.Eq(sym.diff(f,z))
    print("\nBeginnen met oplossen")
 #   Lost de partieel afgeleiden op voor x, y en z op de versimpelde manier
    singList = sym.solve([px,py,pz,0],(x,y,z),minimal = True, simplify = False, rational = False)
