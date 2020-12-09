@@ -24,3 +24,7 @@ PWS Figuren plotten:
 -Het script om vergelijkingen in de vorm F(x,y,z) = 0 te plotten in 3D
   
 -Bibliotheken: sympy, numpy, matplotlib
+
+9-12-2020:
+Sympy==1.4, numpy==1.19.4, matplotlib == 3.3.3, pip== 20.3.1
+Installeer deze in een venv zodat er geen errors komen.
